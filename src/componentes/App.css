@@ -1,0 +1,33 @@
+.body{
+    height: 100vh;
+}
+
+.container{
+    padding: 15px 0;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.container h1{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 900px) {
+    :root{
+        font-size: 12px;
+    }
+
+    .container h1{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-height: 500px) {
+    .container h1{
+        margin-bottom: 10px;
+    }
+}

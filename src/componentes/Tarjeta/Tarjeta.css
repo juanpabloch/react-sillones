@@ -1,0 +1,90 @@
+.Tarjeta{
+    max-width: 860px;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    width: 650px;
+    height: 650px;
+    flex: 2;
+}
+    .imagen img{
+        width: 100%;
+        min-width: 250px;
+    }
+
+.descripcion{
+    flex: 1; 
+    min-width: 310px;
+}   
+    .descripcion p{
+        font-family: monospace;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .descripcion h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        margin-bottom: 15px;
+    }
+
+@media screen and (max-height: 700px) {
+    .imagen{
+        width: 450px;
+        height: 450px;
+        flex: 2;
+    }
+        .imagen img{
+            width: 80%;
+            height: 100%;
+            min-width: 250px;
+        }
+}
+
+
+@media screen and (max-width: 900px) {
+    :root{
+        font-size: 12px;
+    }
+
+    .producto{
+        flex-direction: column;
+    }
+    .imagen{
+        max-width: 300px;
+        flex: 1;
+        margin-bottom: 30px;
+    }
+    .descripcion{ 
+        max-width: 400px;
+    }
+}
+
+@media (max-height: 600px) {
+    .producto{
+        flex-direction: row;
+    }
+
+    .imagen{
+        width: 280px;
+        height: 280px;
+        flex: 2;
+    }
+        .imagen img{
+            width: 80%;
+            height: 100%;
+            min-width: 250px;
+        }
+}
