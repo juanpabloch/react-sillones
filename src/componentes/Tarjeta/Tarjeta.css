@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .Tarjeta{
     max-width: 860px;
     margin: 0 auto;
@@ -8,7 +14,7 @@
 .producto{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .imagen{
@@ -24,9 +30,11 @@
 .descripcion{
     flex: 1; 
     min-width: 310px;
+    margin-top: 100px;
 }   
     .descripcion p{
-        font-family: monospace;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
         font-size: 1.2rem;
         letter-spacing: 1px;
     }
@@ -65,10 +73,15 @@
     .imagen{
         max-width: 300px;
         flex: 1;
+        margin: 0 auto;
         margin-bottom: 30px;
+        
     }
     .descripcion{ 
-        max-width: 400px;
+        max-width: 350px;
+        margin-top: 0px;
+        margin: 0 auto;
+        padding: 10px;
     }
 }
 
