@@ -18,8 +18,8 @@
 }
 
 .imagen{
-    width: 650px;
-    height: 650px;
+    width: 550px;
+    height: 500px;
     flex: 2;
 }
     .imagen img{
